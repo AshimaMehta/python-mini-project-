@@ -1,0 +1,13 @@
+import re
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+from sklearn import metrics
+from scipy.spatial.distance import cdist
+import numpy as np
+from sklearn.cluster import KMeans 
+import os
+from sklearn.cluster import KMeans
+#Read the data
+d1 = pd.read_csv('/root/ddos_attack/log_file',header=None,names=['C1','C2'])
